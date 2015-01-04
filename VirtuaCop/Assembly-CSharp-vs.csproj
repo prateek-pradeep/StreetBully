@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{545DF21C-DF4B-B61F-9F22-F5AF6BE36BD3}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_1;UNITY_4_6;UNITY_IPHONE;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;UNITY_IPHONE_API;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_GAMECENTER;UNITY_IOS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugin\TouchKit\Helpers\TKRect.cs" />
+     <Compile Include="Assets\Plugin\TouchKit\Helpers\TKTouch.cs" />
+     <Compile Include="Assets\Plugin\TouchKit\Helpers\TouchKitEditorSupport.cs" />
+     <Compile Include="Assets\Plugin\TouchKit\Recognizers\TKAbstractGestureRecognizer.cs" />
+     <Compile Include="Assets\Plugin\TouchKit\Recognizers\TKAnyTouchRecognizer.cs" />
+     <Compile Include="Assets\Plugin\TouchKit\Recognizers\TKButtonRecognizer.cs" />
+     <Compile Include="Assets\Plugin\TouchKit\Recognizers\TKCurveRecognizer.cs" />
+     <Compile Include="Assets\Plugin\TouchKit\Recognizers\TKLongPressRecognizer.cs" />
+     <Compile Include="Assets\Plugin\TouchKit\Recognizers\TKOneFingerRotationRecognizer.cs" />
+     <Compile Include="Assets\Plugin\TouchKit\Recognizers\TKPanRecognizer.cs" />
+     <Compile Include="Assets\Plugin\TouchKit\Recognizers\TKPinchRecognizer.cs" />
+     <Compile Include="Assets\Plugin\TouchKit\Recognizers\TKRotationRecognizer.cs" />
+     <Compile Include="Assets\Plugin\TouchKit\Recognizers\TKSwipeRecognizer.cs" />
+     <Compile Include="Assets\Plugin\TouchKit\Recognizers\TKTapRecognizer.cs" />
+     <Compile Include="Assets\Plugin\TouchKit\TouchKit.cs" />
+     <Compile Include="Assets\Plugin\TouchKit\demos\DemoOne\DemoOne.cs" />
+     <Compile Include="Assets\Plugin\TouchKit\demos\DemoTwo\DemoTwo.cs" />
+     <Compile Include="Assets\Plugin\TouchKit\demos\DemoTwo\VirtualControls.cs" />
+     <Compile Include="Assets\Scripts\Common\BulletAttribute.cs" />
+     <Compile Include="Assets\Scripts\Common\Constants.cs" />
+     <Compile Include="Assets\Scripts\Common\Parameter.cs" />
+     <Compile Include="Assets\Scripts\Common\PlayerTurret.cs" />
+     <Compile Include="Assets\Scripts\Enum\Compass.cs" />
+     <Compile Include="Assets\Scripts\Enum\PoolObjectType.cs" />
+     <Compile Include="Assets\Scripts\Enum\WeaponType.cs" />
+     <Compile Include="Assets\Scripts\GamePlay\Common\BulletPoolGameObject.cs" />
+     <Compile Include="Assets\Scripts\GamePlay\Common\GameplayConstants.cs" />
+     <Compile Include="Assets\Scripts\GamePlay\Common\ObjectPool.cs" />
+     <Compile Include="Assets\Scripts\GamePlay\Common\ObjectPoolManager.cs" />
+     <Compile Include="Assets\Scripts\GamePlay\Common\PoolGameObject.cs" />
+     <Compile Include="Assets\Scripts\GamePlay\Common\PoolingGameObject.cs" />
+     <Compile Include="Assets\Scripts\GamePlay\Common\PoolingObjectAttributes.cs" />
+     <Compile Include="Assets\Scripts\GamePlay\Common\PoolingObjectGenerator.cs" />
+     <Compile Include="Assets\Scripts\GamePlay\Common\RollAndYawFrame.cs" />
+     <Compile Include="Assets\Scripts\GamePlay\Player\PlayerHealthArmor.cs" />
+     <Compile Include="Assets\Scripts\GamePlay\Player\PlayerWeapon.cs" />
+     <Compile Include="Assets\Scripts\GamePlay\Weapon\BulletDestroy.cs" />
+     <Compile Include="Assets\Scripts\GamePlay\Weapon\BulletMovement.cs" />
+     <Compile Include="Assets\Scripts\GamePlay\Weapon\Pistol.cs" />
+     <Compile Include="Assets\Scripts\GamePlay\Weapon\Shotgun.cs" />
+     <Compile Include="Assets\Scripts\GamePlay\Weapon\Stoner.cs" />
+     <Compile Include="Assets\Scripts\GamePlay\Weapon\Weapon.cs" />
+     <Compile Include="Assets\Scripts\Interface\IBulletPoolObject.cs" />
+     <Compile Include="Assets\Scripts\Interface\IPlayerTurret.cs" />
+     <Compile Include="Assets\Scripts\Interface\IPoolGameObject.cs" />
+     <Compile Include="Assets\ScriptsDemo\AdjustFOV.cs" />
+     <Compile Include="Assets\ScriptsDemo\BulletAutoDestroy.cs" />
+     <Compile Include="Assets\ScriptsDemo\DieParticleSystem.cs" />
+     <Compile Include="Assets\ScriptsDemo\EnemyBase.cs" />
+     <Compile Include="Assets\ScriptsDemo\EnemyHealth.cs" />
+     <Compile Include="Assets\ScriptsDemo\EnemyShoot.cs" />
+     <Compile Include="Assets\ScriptsDemo\EnemySign.cs" />
+     <Compile Include="Assets\ScriptsDemo\EnemySpawner.cs" />
+     <Compile Include="Assets\ScriptsDemo\FPSScript.cs" />
+     <Compile Include="Assets\ScriptsDemo\GameManager.cs" />
+     <Compile Include="Assets\ScriptsDemo\GamePlay.cs" />
+     <Compile Include="Assets\ScriptsDemo\GamePlayUI.cs" />
+     <Compile Include="Assets\ScriptsDemo\InputManager.cs" />
+     <Compile Include="Assets\ScriptsDemo\LevelManager.cs" />
+     <Compile Include="Assets\ScriptsDemo\PlayerAim.cs" />
+     <Compile Include="Assets\ScriptsDemo\PlayerHealth.cs" />
+     <Compile Include="Assets\ScriptsDemo\PlayerShoot.cs" />
+     <Compile Include="Assets\ScriptsDemo\Preferences.cs" />
+     <Compile Include="Assets\ScriptsDemo\Singleton.cs" />
+     <Compile Include="Assets\ScriptsDemo\SingletonPersistant.cs" />
+     <Compile Include="Assets\ScriptsDemo\SpawnPointGizmo.cs" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Detail.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Reflective.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
