@@ -20,17 +20,21 @@ public class SpawnManager : MonoBehaviour
 				// Get all child Spawn points
 				int count = 0;
 				foreach (Transform child in myT) {
-						spawnPoints [count] = child.gameObject.GetComponent<ParentSpawnPoint> ();						
+						spawnPoints [count++] = child.gameObject.GetComponent<ParentSpawnPoint> ();						
 				}
+				SpawnEnemy ();
 		}
 				
 		void SpawnEnemy ()
 		{
-				Transform enemy1 = PoolManager.Pools [Constants.ENEMY_POOL].Spawn (Constants.ENEMY1_POOL_PREFAB);
+				Transform enemy1 = PoolManager.Pools [Constants.ENEMY_POOL].Spawn (Constants.ENEMY1_POOL_PREFAB);				
 				enemy1.gameObject.SetActive (true);
 				var movementScript = enemy1.gameObject.GetComponent<EnemyMovement> ();
-				
-				//enemy1.position = 
+				ParentSpawnPoint parentSpawnPoint = GetSupportedSpawnPoint (movementScript.enemyType);
+				enemy1.position = parentSpawnPoint.myTransform.position;
+				IEnumerable<Transform> allTransform = parentSpawnPoint.GetCompatiblePoints (movementScript.enemyType);
+				int index = Random.Range (0, allTransform.Count ());
+				movementScript.SetFixedPoint (allTransform.ElementAt (index).position);
 				
 		}
 
@@ -38,8 +42,8 @@ public class SpawnManager : MonoBehaviour
 		{
 				//Also check if spawn is free
 				IEnumerable<ParentSpawnPoint> supportedSpawnLIst = spawnPoints.Where (spawn => (spawn.supportedSpawnPoint & enemySpawnType) == enemySpawnType);
-				int index = Random.Range (0, supportedSpawnLIst.Count());
-				return supportedSpawnLIst.ElementAt(index);
+				int index = Random.Range (0, supportedSpawnLIst.Count ());
+				return supportedSpawnLIst.ElementAt (index);
 		}
 
 		void GetAvailableSpawnPoint (SpawnPointTypes spawnType)
