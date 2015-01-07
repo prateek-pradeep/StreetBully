@@ -1,6 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
+Project("{5ADCA07F-D74F-9AC2-71B8-9A201CB3D541}") = "VirtuaCop", "Assembly-CSharp-firstpass-vs.csproj", "{167EE668-684E-2091-A0D0-B341EE96DB76}"
+EndProject
 Project("{5ADCA07F-D74F-9AC2-71B8-9A201CB3D541}") = "VirtuaCop", "Assembly-CSharp-vs.csproj", "{545DF21C-DF4B-B61F-9F22-F5AF6BE36BD3}"
 EndProject
 Project("{5ADCA07F-D74F-9AC2-71B8-9A201CB3D541}") = "VirtuaCop", "Assembly-CSharp-Editor-vs.csproj", "{5EBA1643-9DA9-B0B7-0D6B-C9BCE4160B1D}"
@@ -11,6 +13,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{167EE668-684E-2091-A0D0-B341EE96DB76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{167EE668-684E-2091-A0D0-B341EE96DB76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{167EE668-684E-2091-A0D0-B341EE96DB76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{167EE668-684E-2091-A0D0-B341EE96DB76}.Release|Any CPU.Build.0 = Release|Any CPU
 		{545DF21C-DF4B-B61F-9F22-F5AF6BE36BD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{545DF21C-DF4B-B61F-9F22-F5AF6BE36BD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{545DF21C-DF4B-B61F-9F22-F5AF6BE36BD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -23,7 +29,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																																																																																																																																														GlobalSection(MonoDevelopProperties) = preSolution
+																																																																																																																																																																																																																																												GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

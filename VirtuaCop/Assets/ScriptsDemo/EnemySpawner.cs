@@ -40,7 +40,7 @@ public class EnemySpawner : MonoBehaviour
 				if (GamePlay.Instance.isStart)
 						return;
 				if (!isSpawning && enemyList.childCount < Mathf.Min (maxEnemiesAtATime, GamePlay.Instance.GetRemainingEnemies ()) 
-		    && !GamePlay.Instance.IsMaximumEnemies ()) {
+						&& !GamePlay.Instance.IsMaximumEnemies ()) {
 						isSpawning = true;
 						StartCoroutine (Spawn ());
 				}

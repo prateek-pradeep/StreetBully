@@ -46,14 +46,35 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Plugin\TouchKit\Editor\TouchKitEditor.cs" />
-     <Compile Include="Assets\Plugin\TouchKit\Editor\TouchKitMenuItem.cs" />
+     <Compile Include="Assets\Editor\Game\ChildSpawnPointEditor.cs" />
+     <Compile Include="Assets\Editor\Game\ParentSpawnPointEditor.cs" />
+     <Compile Include="Assets\Editor\Game\PoolingObjectGeneratorEditor.cs" />
+     <Compile Include="Assets\Editor\PathologicalGames\Common\PGEditorUtils.cs" />
+     <Compile Include="Assets\Editor\PathologicalGames\PoolManager\PreRuntimePoolItemInspector.cs" />
+     <Compile Include="Assets\Editor\PathologicalGames\PoolManager\SpawnPoolInspector.cs" />
+     <Compile Include="Assets\Editor\PathologicalGames\TargetPro\CollisionTargetTrackerInspector.cs" />
+     <Compile Include="Assets\Editor\PathologicalGames\TargetPro\DetonatorInspector.cs" />
+     <Compile Include="Assets\Editor\PathologicalGames\TargetPro\FireControllerInspector.cs" />
+     <Compile Include="Assets\Editor\PathologicalGames\TargetPro\LineOfSightModifierInspector.cs" />
+     <Compile Include="Assets\Editor\PathologicalGames\TargetPro\ProjectileInspector.cs" />
+     <Compile Include="Assets\Editor\PathologicalGames\TargetPro\TargetProMessengerInspector.cs" />
+     <Compile Include="Assets\Editor\PathologicalGames\TargetPro\TargetTrackerInspector.cs" />
+     <Compile Include="Assets\Editor\PathologicalGames\TargetPro\TargetableInspector.cs" />
+     <Compile Include="Assets\Editor\PathologicalGames\UnityConstraints\ConstraintBaseInspector.cs" />
+     <Compile Include="Assets\Editor\PathologicalGames\UnityConstraints\ConstraintFrameworkBaseInspector.cs" />
+     <Compile Include="Assets\Editor\PathologicalGames\UnityConstraints\LookAtBaseClassInspector.cs" />
+     <Compile Include="Assets\Editor\PathologicalGames\UnityConstraints\LookAtConstraintInspector.cs" />
+     <Compile Include="Assets\Editor\PathologicalGames\UnityConstraints\SmoothLookAtConstraintInspector.cs" />
+     <Compile Include="Assets\Editor\PathologicalGames\UnityConstraints\TurntableConstraintInspector.cs" />
+     <Compile Include="Assets\Editor\TouchKit\TouchKitEditor.cs" />
+     <Compile Include="Assets\Editor\TouchKit\TouchKitMenuItem.cs" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Detail.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Reflective.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
+     <None Include="Assets\Plugins\PathologicalGames\readme.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
@@ -68,6 +89,8 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{167EE668-684E-2091-A0D0-B341EE96DB76}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{545DF21C-DF4B-B61F-9F22-F5AF6BE36BD3}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript.unityproj">

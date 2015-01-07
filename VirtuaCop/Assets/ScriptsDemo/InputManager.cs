@@ -7,7 +7,7 @@ public class InputManager : MonoBehaviour
 		TKSwipeRecognizer swipeHorizontal;
 		TKLongPressRecognizer longPress;
 		Transform playerOffset;
-		Transform myT;
+
 		RaycastHit shootHit;
 		Ray shootRays;
 		PlayerAim playerAimAt;
@@ -37,9 +37,7 @@ public class InputManager : MonoBehaviour
 				playerAimAt = playerOffset.GetComponent<PlayerAim> ();							
 		
 				rollAndYawFrame = GameObject.FindGameObjectWithTag (Constants.PLAYER_CAMERA_COMPOSITE_TAG).GetComponent<RollAndYawFrame> ();
-
-				myT = transform;
-		
+							
 				nonShootablelayerMask = ~(1 << 9);
 		}
 	
@@ -53,7 +51,7 @@ public class InputManager : MonoBehaviour
 		{				
 				shootRays = Camera.main.ScreenPointToRay (tapParam.touchLocation ());
 				if (Physics.Raycast (shootRays, out shootHit, 100f, nonShootablelayerMask)) {							
-						playerAimAt.AimAt (shootHit.point);										
+						playerAimAt.AimAt (shootHit.point);
 				}		
 		}
 

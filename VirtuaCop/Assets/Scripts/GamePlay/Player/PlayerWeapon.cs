@@ -37,7 +37,7 @@ public class PlayerWeapon : MonoBehaviour
 		
 		public void FireWeaponAtTarget (Vector3 target)
 		{
-				activeWeapon.SendMessage ("Fire", target, SendMessageOptions.DontRequireReceiver);
+				activeWeapon.SendMessage ("PlayerFire", target, SendMessageOptions.DontRequireReceiver);
 		}
 
 }

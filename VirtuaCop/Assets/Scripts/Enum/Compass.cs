@@ -3,11 +3,11 @@ using System.Collections;
 
 public enum Compass
 {
-		None=0,
-		North,
-		East,
-		South,
-		West
+		None=1 << 0,
+		North=1 << 1,
+		East=1 << 2,
+		South=1 << 3,
+		West=1 << 4
 }
 
 public static class CompassExtensionClass
@@ -25,7 +25,7 @@ public static class CompassExtensionClass
 						return 270f;
 						
 				default:
-						return 0f;
+						return 360f;
 						
 				}
 		}
@@ -35,17 +35,19 @@ public static class CompassExtensionClass
 				return GetDirection (value, direction);
 		}
 		
-		public static Compass GetNextDirection (this Compass value, TKSwipeDirection direction, Compass[] supportedDirection)
+		public static Compass GetNextDirection (this Compass value, TKSwipeDirection direction, Compass supportedDirection)
 		{
 				Compass newDirection = value;
 				while (true) {
 						newDirection = GetDirection (newDirection, direction);
 						
+						if ((newDirection & supportedDirection) == newDirection)
+								return newDirection;
 						//check if found direction is supported 
-						foreach (var eachDir in supportedDirection) {
-								if (eachDir == newDirection)
-										return newDirection;
-						}						
+//								foreach (var eachDir in supportedDirection) {
+//										if (eachDir == newDirection)
+//												
+//								}						
 				}
 				//return newDirection;
 		}

@@ -10,7 +10,7 @@ public class Weapon : MonoBehaviour
 		protected float totalClips;
 		protected float bulletsPerClip ;
 		protected float fireRate;
-		protected float nextFireTime;
+		
 		protected Vector3 nozzlePosition;
 		protected Transform myT;
 

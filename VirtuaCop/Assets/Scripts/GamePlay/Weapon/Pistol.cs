@@ -15,7 +15,6 @@ public class Pistol : Weapon
 		void OnEnable ()
 		{				
 				weaponAttribute = GameplayConstants.Instance.CurrentPlayerTurretAttribute;
-				this.nextFireTime = 0f;
 				
 //				this.bulletDamage = attribute.BulletDamage.CurrentValue;
 //				this.bulletHitForce = attribute.BulletHitForce;
@@ -25,8 +24,13 @@ public class Pistol : Weapon
 //				this.totalClips = attribute.TotalClips.CurrentValue;
 
 		}
-		
-		public void Fire (Vector3 target)
+
+		void LateUpdate ()
+		{
+				//TODO: play audio
+		}
+
+		public void PlayerFire (Vector3 target)
 		{				
 //				if (weaponAttribute.BulletsPerClip.CurrentValue == 0) {
 //						//TODO: send reload message
@@ -35,26 +39,20 @@ public class Pistol : Weapon
 				
 				if (timer < Time.time) {
 						//timer = Time.time + weaponAttribute.TurretFireRate.CurrentValue;
-						timer = Time.time + 0.5f;
+						timer = Time.time + 0.1f;
 						FireShot (target);
-				}
-		
-		}
-			
-		void LateUpdate ()
-		{
-				//TODO: play audio
+				}		
 		}
 
 		void FireShot (Vector3 target)
 		{
 				//TODO: get bullet from pool 
-				BulletPoolGameObject bullet = ObjectPoolManager.Instance.GetObject (PoolObjectType.PlayerBullet) as BulletPoolGameObject;
+				//BulletPoolGameObject bullet = ObjectPoolManager.Instance.GetObject (PoolObjectType.PlayerBullet) as BulletPoolGameObject;
 					
-				bullet.BulletMovementScript.SetSourceAndTargetLocation (nozzlePosition, target);
-				//bullet.BulletAttributeScript.SetHealthAndArmorDamage()
+				//bullet.BulletMovementScript.SetSourceAndTargetLocation (nozzlePosition, target);				
 						
-				//TODO: set source and target position, bullet damage capacity
+				//TODO: set bullet damage capacity
+				//bullet.BulletAttributeScript.SetHealthAndArmorDamage()
 		}
 
 }

@@ -7,14 +7,15 @@ public class RollAndYawFrame : MonoBehaviour
 		TKSwipeRecognizer swipeHorizontal;
 		Transform myTransform;
 		Quaternion newRotation = Quaternion.identity;
-		Compass[] supportedDirection;
+		Compass supportedDirection;
 
 		void Start ()
 		{
 				direction = Compass.North;
 				myTransform = transform;
 				//supportedDirection = GameManager.Instance.SupportedDirection;
-				supportedDirection = new Compass[]{Compass.North , Compass.East , Compass.West};
+				supportedDirection = Compass.South | Compass.North | Compass.East | Compass.West;
+		
 		}
 			
 		/// <summary>
