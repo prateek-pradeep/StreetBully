@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using System.Collections;
 
-[CustomEditor(typeof(ChildSpawnPoint))]
+//[CustomEditor(typeof(ChildSpawnPoint))]
 public class ChildSpawnPointEditor : Editor
 {
 		public SerializedProperty spawnPointTypeMask;

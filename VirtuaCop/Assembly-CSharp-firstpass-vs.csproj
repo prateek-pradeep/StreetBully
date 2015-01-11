@@ -67,6 +67,7 @@
      <Compile Include="Assets\Plugins\PathologicalGames\UnityConstraints\SmoothLookAtConstraint.cs" />
      <Compile Include="Assets\Plugins\PathologicalGames\UnityConstraints\TurntableConstraint.cs" />
      <Compile Include="Assets\Plugins\PathologicalGames\UnityConstraints\UnityConstraints.cs" />
+     <Compile Include="Assets\Plugins\Pixelplacement\iTween.cs" />
      <Compile Include="Assets\Plugins\TouchKit\Helpers\TKRect.cs" />
      <Compile Include="Assets\Plugins\TouchKit\Helpers\TKTouch.cs" />
      <Compile Include="Assets\Plugins\TouchKit\Helpers\TouchKitEditorSupport.cs" />
@@ -85,7 +86,6 @@
      <Compile Include="Assets\Plugins\TouchKit\demos\DemoOne\DemoOne.cs" />
      <Compile Include="Assets\Plugins\TouchKit\demos\DemoTwo\DemoTwo.cs" />
      <Compile Include="Assets\Plugins\TouchKit\demos\DemoTwo\VirtualControls.cs" />
-     <Compile Include="Assets\Plugins\iTween.cs" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />

@@ -1,39 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GamePlay/Enemy/EnemyMovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GamePlay/Enemy/RoamAndShoot.cs">
     <Files>
-      <File FileName="Assets/SpawnManager.cs" Line="34" Column="60" />
-      <File FileName="Assets/Scripts/GamePlay/Enemy/EnemyMovement.cs" Line="48" Column="50" />
-      <File FileName="Assets/Scripts/GamePlay/Spawn/ParentSpawnPoint.cs" Line="23" Column="1" />
-      <File FileName="Assets/Scripts/Enum/SpawnPointTypes.cs" Line="12" Column="54" />
+      <File FileName="Assets/Scripts/GamePlay/Enemy/HideAndShoot.cs" Line="91" Column="31" />
+      <File FileName="Assets/Scripts/GamePlay/Enemy/MoveToAndShoot.cs" Line="26" Column="4" />
+      <File FileName="Assets/Scripts/GamePlay/Enemy/RoamAndShoot.cs" Line="96" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="Assembly-CSharp" expanded="True">
-            <Node name="PoolManagerExampleFiles" expanded="True">
-              <Node name="Scripts" expanded="True" />
-            </Node>
-            <Node name="Scripts" expanded="True">
-              <Node name="Common" expanded="True" />
-              <Node name="Enum" expanded="True" />
-              <Node name="GamePlay" expanded="True">
-                <Node name="Common" expanded="True" />
-                <Node name="Enemy" expanded="True">
-                  <Node name="EnemyMovement.cs" selected="True" />
-                </Node>
-                <Node name="Spawn" expanded="True" />
-                <Node name="Weapon" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="ScriptsDemo" expanded="True" />
-          </Node>
-          <Node name="Assembly-CSharp-Editor" expanded="True">
-            <Node name="Editor" expanded="True">
-              <Node name="Game" expanded="True" />
-            </Node>
-          </Node>
-        </State>
+        <State expanded="True" selected="True" />
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State />
@@ -41,10 +16,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/Prateek/VirtuaCop/Assets/ScriptsDemo/NEWS.cs" line="39" />
-      <Breakpoint file="/Users/Prateek/GitHub/StreetBully/VirtuaCop/Assets/Plugins/PathologicalGames/PoolManager/SpawnPool.cs" line="798" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

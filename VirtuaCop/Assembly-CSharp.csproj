@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\Common\Singleton.cs" />
      <Compile Include="Assets\Scripts\Common\SingletonPersistant.cs" />
      <Compile Include="Assets\Scripts\Enum\Compass.cs" />
+     <Compile Include="Assets\Scripts\Enum\EnemyState.cs" />
      <Compile Include="Assets\Scripts\Enum\PoolObjectType.cs" />
      <Compile Include="Assets\Scripts\Enum\SpawnPointTypes.cs" />
      <Compile Include="Assets\Scripts\Enum\WeaponType.cs" />
@@ -72,12 +73,13 @@
      <Compile Include="Assets\Scripts\GamePlay\Common\PoolingObjectAttributes.cs" />
      <Compile Include="Assets\Scripts\GamePlay\Common\PoolingObjectGenerator.cs" />
      <Compile Include="Assets\Scripts\GamePlay\Common\RollAndYawFrame.cs" />
-     <Compile Include="Assets\Scripts\GamePlay\Enemy\EnemyMovement.cs" />
+     <Compile Include="Assets\Scripts\GamePlay\Enemy\EnemyStyle.cs" />
+     <Compile Include="Assets\Scripts\GamePlay\Enemy\HideAndShoot.cs" />
+     <Compile Include="Assets\Scripts\GamePlay\Enemy\MoveToAndShoot.cs" />
+     <Compile Include="Assets\Scripts\GamePlay\Enemy\RoamAndShoot.cs" />
      <Compile Include="Assets\Scripts\GamePlay\Player\PlayerAim.cs" />
      <Compile Include="Assets\Scripts\GamePlay\Player\PlayerHealthArmor.cs" />
      <Compile Include="Assets\Scripts\GamePlay\Player\PlayerWeapon.cs" />
-     <Compile Include="Assets\Scripts\GamePlay\Spawn\ChildSpawnPoint.cs" />
-     <Compile Include="Assets\Scripts\GamePlay\Spawn\ParentSpawnPoint.cs" />
      <Compile Include="Assets\Scripts\GamePlay\Weapon\BulletDestroy.cs" />
      <Compile Include="Assets\Scripts\GamePlay\Weapon\BulletMovement.cs" />
      <Compile Include="Assets\Scripts\GamePlay\Weapon\Pistol.cs" />
@@ -104,7 +106,6 @@
      <Compile Include="Assets\ScriptsDemo\PlayerShoot.cs" />
      <Compile Include="Assets\ScriptsDemo\Preferences.cs" />
      <Compile Include="Assets\ScriptsDemo\SpawnPointGizmo.cs" />
-     <Compile Include="Assets\SpawnManager.cs" />
      <Compile Include="Assets\TargetProExampleFiles\Scripts\DemoEnemy.cs" />
      <Compile Include="Assets\TargetProExampleFiles\Scripts\DemoEnemyWithLOS.cs" />
      <Compile Include="Assets\TargetProExampleFiles\Scripts\DemoSeeker.cs" />
