@@ -14,7 +14,7 @@ public class RollAndYawFrame : MonoBehaviour
 				direction = Compass.North;
 				myTransform = transform;
 				//supportedDirection = GameManager.Instance.SupportedDirection;
-				supportedDirection = Compass.South | Compass.North | Compass.East | Compass.West;
+				supportedDirection = Compass.North| Compass.NorthEast|Compass.NorthWest;
 		
 		}
 			

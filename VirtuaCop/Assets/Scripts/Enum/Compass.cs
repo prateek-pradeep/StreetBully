@@ -7,7 +7,9 @@ public enum Compass
 		North=1 << 1,
 		East=1 << 2,
 		South=1 << 3,
-		West=1 << 4
+		West=1 << 4,
+		NorthWest = 1 << 5,
+		NorthEast=1 << 6
 }
 
 public static class CompassExtensionClass
@@ -23,9 +25,15 @@ public static class CompassExtensionClass
 						
 				case Compass.West:
 						return 270f;
+				case Compass.NorthEast:
+
+						return 45f;
+				case Compass.NorthWest:
+
+						return 315f;
 						
 				default:
-						return 360f;
+						return 0f;
 						
 				}
 		}
@@ -43,13 +51,8 @@ public static class CompassExtensionClass
 						
 						if ((newDirection & supportedDirection) == newDirection)
 								return newDirection;
-						//check if found direction is supported 
-//								foreach (var eachDir in supportedDirection) {
-//										if (eachDir == newDirection)
-//												
-//								}						
 				}
-				//return newDirection;
+
 		}
 
 		private static Compass GetDirection (Compass value, TKSwipeDirection direction)
@@ -57,7 +60,7 @@ public static class CompassExtensionClass
 				switch (value) {
 				case Compass.East:
 						if (direction == TKSwipeDirection.Left) {
-								return Compass.North;
+								return Compass.NorthEast;
 						} else if (direction == TKSwipeDirection.Right)
 								return Compass.South;
 						break;
@@ -72,13 +75,25 @@ public static class CompassExtensionClass
 						if (direction == TKSwipeDirection.Left) {
 								return Compass.South;
 						} else if (direction == TKSwipeDirection.Right)
-								return Compass.North;
+								return Compass.NorthWest;
 						break;
 				case Compass.North:
 						if (direction == TKSwipeDirection.Left) {
-								return Compass.West;
+								return Compass.NorthWest;
+						} else if (direction == TKSwipeDirection.Right)
+								return Compass.NorthEast;
+						break;
+				case Compass.NorthEast:
+						if (direction == TKSwipeDirection.Left) {
+								return Compass.North;
 						} else if (direction == TKSwipeDirection.Right)
 								return Compass.East;
+						break;
+				case Compass.NorthWest:
+						if (direction == TKSwipeDirection.Left) {
+								return Compass.West;
+						} else if (direction == TKSwipeDirection.Right)
+								return Compass.North;
 						break;
 				}
 				return value;
